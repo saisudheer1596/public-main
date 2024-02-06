@@ -1,26 +1,26 @@
 import React from 'react'
-import client1 from './../../assets/client/client1.png'
-import client2 from './../../assets/client/client2.png'
-import client3 from './../../assets/client/client3.png'
-import client4 from './../../assets/client/client4.png'
-import client5 from './../../assets/client/client5.png'
+import client1 from './../../assets/client/hit-tv-logo.png'
+import client2 from './../../assets/client/sowrya-logo.png'
+import client3 from './../../assets/client/proveva-logo.png'
 import Carousel from 'react-multi-carousel'
+
+
 function Clients() {
     const responsive ={
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 5,
-            slidesToSlide: 5 // optional, default to 1.
+            items: 3,
+            slidesToSlide: 3 // optional, default to 1.
           },
           tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 5,
-            slidesToSlide: 5 // optional, default to 1.
+            items: 3,
+            slidesToSlide: 3 // optional, default to 1.
           },
           mobile: {
             breakpoint: { max: 464, min: 0 },
-            items: 5,
-            slidesToSlide: 5 // optional, default to 1.
+            items: 3,
+            slidesToSlide: 1 // optional, default to 1.
           }
         
     };
@@ -33,11 +33,9 @@ function Clients() {
                             <Carousel
                                 responsive={responsive}
                             >
-                                <a href="#"><img src={client1} alt="Client" height={100} width={100} /></a>
-                                <a href="#"><img src={client2} alt="Client" height={100} width={100} /></a>
-                                <a href="#"><img src={client3} alt="Client" height={100} width={100} /></a>
-                                <a href="#"><img src={client4} alt="Client" height={100} width={100} /></a>
-                                <a href="#"><img src={client5} alt="Client" height={100} width={100} /></a>
+                                <a href="#"><img src={client1} alt="Client"/></a>
+                                <a href="#"><img src={client2} alt="Client"/></a>
+                                <a href="#"><img src={client3} alt="Client"/></a>
                             </Carousel>
                         </div>
                     </div>
